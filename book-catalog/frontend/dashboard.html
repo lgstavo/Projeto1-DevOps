@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Simples - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Bem-vindo, <span id="currentUser">Usuário</span>!</h2>
+            <div class="nav-buttons">
+                <button id="viewUsersButton">Ver Usuários</button>
+                <button id="viewRequestsButton">Ver Solicitações Recebidas (<span id="requestCount">0</span>)</button>
+                <button id="logoutButton">Logout</button>
+            </div>
+        </header>
+
+        <section id="usersSection" class="content-section">
+            <h3>Usuários Cadastrados</h3>
+            <ul id="userList">
+                <li>Carregando usuários...</li>
+            </ul>
+        </section>
+
+        <section id="requestsSection" class="content-section" style="display: none;">
+            <h3>Solicitações de Amizade Recebidas</h3>
+            <ul id="receivedRequestsList">
+                <li>Carregando solicitações...</li>
+            </ul>
+        </section>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

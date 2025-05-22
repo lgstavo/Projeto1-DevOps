@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo ao Meu App Simples</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos adicionais para a página de entrada */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .landing-container {
+            max-width: 500px;
+            padding: 30px;
+        }
+        .landing-container h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .landing-container p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .action-buttons a {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 0 10px;
+            font-size: 1.1em;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            color: white;
+            border: none;
+        }
+        .action-buttons a:hover {
+            transform: translateY(-2px);
+        }
+        .btn-login {
+            background-color: #007bff;
+        }
+        .btn-login:hover {
+            background-color: #0056b3;
+        }
+        .btn-register {
+            background-color: #28a745;
+        }
+        .btn-register:hover {
+            background-color: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+    <div class="container landing-container">
+        <h1>Bem-vindo ao Meu App Simples!</h1>
+        <p>Conecte-se, faça amigos e interaja de forma simples e rápida.</p>
+        <div class="action-buttons">
+            <a href="login.html" class="btn-login">Entrar (Login)</a>
+            <a href="register.html" class="btn-register">Criar Conta</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
